@@ -1,0 +1,25 @@
+[project]
+name = "deepagent-playground"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alejandro Torrero", email = "alejandro@lostorrero.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.10.1",
+    "deepagents>=0.7.41",
+    "isort>=9.0.2",
+    "langchain>=1.5.2",
+    "langchain-ollama>=1.2.0",
+    "langchain-openai>=1.8.5",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+deepagent-playground = "deepagent_playground:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
